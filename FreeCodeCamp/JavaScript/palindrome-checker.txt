@@ -1,0 +1,23 @@
+function palindrome(str) {
+
+// let re = /[^A-Za-b0-9]/g; // or /[\W_]/g;
+// let lowRegEx = str.toLowerCase().replace(re, '');
+// let reverseStr = lowRegEx.split('').reverse().join('');
+// return reverseStr === lowRegEx;
+
+  let re = /[\W_]/g; // or /[^A-Za-z0-9_]/g
+  str = str.toLowerCase().replace(re, '');
+
+  let j = str.length;
+  for (let i = 0; i < j/2; i++) {
+    let x = str[i]; //forward character
+    let y = str[j - 1 - i]; //backward character
+    if ( x !== y) {
+      return false;
+    } 
+  }
+  return true;
+}
+
+
+console.log(palindrome("A man, a plan, a canal. Panama"));

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>democontactform</title>
+    <link rel="stylesheet" href="democontactform.css">
+</head>
+<body>
+    <div class="container">
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <h3>Kindly share your contact with us</h3>
+            <input type="text" id="name" placeholder="Your name"required>
+            <input type="text" id="email" placeholder="Email id"required>
+            <input type="text" id="phone" placeholder="Phone no."required>
+            <input type="number" placeholder="Age" id="age" min="18" max="50">
+            <select id="role" placeholder="Role">
+                <option value="student" class="form-role">Student</option>
+                <option value="worker" class="form-role">Worker</option>
+                <option value="joker" class="form-role">Joker</option>
+            </select>
+            <textarea name="" id="message" cols="30" rows="5" placeholder="How can we help you"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <script src=https://smtpjs.com/v3/smtp.js></script>
+    <script src="democontactform.js"></script>
+</body>
+</html>

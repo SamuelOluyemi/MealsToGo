@@ -1,0 +1,14 @@
+function sumFibs(num) {
+  let fibs = [1,1];
+  let fibNums;
+
+  for (let i = 0; i < num; i++) {
+    fibNums = fibs[i] + fibs[i + 1];
+    if (fibNums <= num) {
+     fibs.push(fibNums);
+    }
+  }
+  return fibs.filter(n => n % 2 !== 0).reduce((a,b) => a + b);
+};
+
+console.log(sumFibs(4));

@@ -1,0 +1,13 @@
+function steamrollArray(arr) {
+  let flattened= [];
+  function nestedArr(item) {
+    for (let i = 0; i < item.length; i++) {
+      if (Array.isArray(item[i])){
+        nestedArr(item[i]);
+      } else {flattened.push(item[i])};
+    }
+  return flattened;
+  }
+  return nestedArr(arr);
+}
+console.log(steamrollArray([1, [2], [3, [[4]]]]));

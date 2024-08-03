@@ -1,0 +1,22 @@
+input {
+    width : 100px;
+    height : 75px;
+    font-size: xx-large;
+    border-radius: 15px;
+    margin: 5px; /*trbl*/
+    background-color: rgb(80, 78, 78);
+    color: white;
+    border-style:none;
+}
+
+#myform {
+    margin-left: 350px; /* from the left, I want it to move */
+    margin-top: 0px; /* from the top, I want it to drop down*/
+}
+
+h1 {
+    text-align: center;
+    font-size: 80px;
+    margin-right: 70px;
+    margin-top: 20px;
+}

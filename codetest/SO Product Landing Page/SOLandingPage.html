@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="description" content="SO Landing Page"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" type="text/css" href="SOLandingPage.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="SOLandingPage.js"></script>
+        <title>SO Landing Page </title>
+
+    </head>
+    
+    <body>
+        <div id="page-wrapper">
+            <header id="header">
+                <div class="logo">
+                <img id="header-img"
+                    src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+                    alt="original trombones logo"
+                    />
+                </div>
+                <nav id="nav-bar">
+                <ul>
+                    <li><a class="nav-link" href="#features">Features</a></li>
+                    <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+                    <li><a class="nav-link" href="#pricing">Pricing</a></li>
+                </ul>
+                </nav>
+            </header>
+            
+            <div class="container"></div>
+            
+            <section id="hero">
+                <h2>Meet and Greet with Language Enthusiasts</h2>
+                <form id="form" action="">
+                <input 
+                    id="email"
+                    type="email"
+                    name="email"
+                    placeholder="Enter your email address" />
+                
+                <input type="submit"
+                        id="submit"
+                        value="Get Started"
+                        class="btn" />
+                </form>
+            </section>
+            
+            <div class="container">
+                <section id="features">
+                <div class="grid">
+                    <div class="icon"><i class="fas fa-microphone-alt"></i>
+                    </div>
+                    <div class="desc">
+                    <h2>Audio Calls</h2>
+                    <p>This feature makes it possible to call your friend(s) and speak in a language of your choice.</p> </div>
+                </div>
+                <div class="grid">
+                    <div class="icon"><i class="fas fa-video"></i></div>
+                    <div class="desc">
+                    <h2>Video Calls</h2>
+                    <p>This feauture makes it possible to video-call your friend(s) and speak in a language of your choice</p></div>
+                </div>
+                <div class="grid">
+                    <div class="icon"><i class="fas fa-share"></i></div>
+                    <div class="desc">
+                    <h2>Share Files</h2>
+                    <p>This special feature makes it possible to freely share files with your friend(s); audio, video and documents.</p></div>
+                </div>
+                </section>
+                
+                    <section id="how-it-works">
+                    <iframe width="760" height="400" src="https://www.youtube.com/embed/byBI_GmWTCM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </section>
+                <section  id="pricing">
+                <div class="product" id="so-classic">
+                    <div class="level">SO-Classic</div>
+                <h2>$100</h2>
+                <ol>
+                    <li>Practice questions</li>
+                    <li>Get a private tutor</li>
+                    <li>View our daily status updates</li>
+                    <li>Chat with your friends</li>
+                </ol>
+                    <button class="btn">Select</button>
+                </div>
+            <div class="product" id="so-special">
+                <div class="level">SO-Special</div>
+                <h2>$120</h2>
+                <ol>
+                <li>SO-Classic features</li>
+                <li>Audio Calls</li>
+                <li>Share Files (5mb max)</li>
+                </ol>
+                <button class="btn">Select</button>
+                </div>
+            <div class="product" id="so-premium">
+                <div class="level"> SO-Premium</div>
+                <h2>$150</h2>
+                <ol>
+                <li>SO-Classic features</li>
+                <li>Audio Calls</li>
+                <li>Share Files (unlimited)</li>
+                <li>Video Calls</li>
+                <li>Group Video Call/Class</li>
+                </ol>
+                <button class="btn">Select</button>
+                </div>
+                </section>
+                <footer>
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+                <span>Copyright 2021, SO-Lingua</span>
+                </footer>
+            </div>
+            </div>
+    </body>
+</html>

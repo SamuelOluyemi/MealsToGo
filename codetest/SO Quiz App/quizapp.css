@@ -1,0 +1,125 @@
+@import url(http://fonts.googleapis.com/css?family=Rokkitt);
+h1{
+    font-family: 'Rokkitt', serif;
+    text-align: center;
+    color:black;
+    font-size: 25px;
+}
+
+ul {
+    list-style: none;
+
+}
+li{
+    font-family: 'Rokkitt', serif;
+    font-size: 2em;
+    color:black;
+}
+input[type=radio] {
+    border: 0px;
+    width:20px;
+    height:2em;
+}
+
+p {
+    font-family: 'Rokkitt', serif;
+}
+
+/*Quiz Classes */
+.quizContainer {
+    background-color: antiquewhite;
+    border-radius: 8px;
+    width: 75%;
+    margin: auto;
+    margin-top: 190px;
+    padding-top: 5px;
+    position: relative;
+}
+.buttons {
+    
+    display: grid;
+    grid-template-columns: repeat(2, 5px);
+}
+.nextButton {
+    border-radius: 6px;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    background-color: brown;
+    /*clear: both;*/
+    color:black;
+    font-family: 'Rokkitt', serif;
+    font-weight: bold;
+    margin: auto;
+    padding-top: 15px;
+    cursor: pointer;
+}
+.checkAnswer {
+    border-radius: 6px;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    background-color: brown;
+    /*clear: both;*/
+    color:black;
+    font-family: 'Rokkitt', serif;
+    font-weight: bold;
+    
+    margin-left: 450px;
+    margin-top: 5px;
+    padding-top: 20px;
+    cursor: pointer;
+}
+.prevButton {
+    border-radius: 6px;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    background-color: brown;
+    /*clear: both;*/
+    color:black;
+    font-family: 'Rokkitt', serif;
+    font-weight: bold;
+    
+    margin: auto;
+    padding-top: 20px;
+    cursor: pointer;
+}
+.question {
+    font-family: 'Rokkitt', serif;
+    font-size: 2em;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    border-radius: 6px;
+    background-color: bisque;
+    text-align: center;
+    color: black;
+}
+.quizMessage {
+    background-color: beige;
+    border-radius: 6px;
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    padding: 2px;
+    font-family: 'Rokkitt', serif;
+    color:black
+}
+.choiceList {
+    font-family: 'Courier New', Courier, monospace;
+    color:black;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.result{
+    width: 30px;
+    height: auto;
+    border-radius: 6px;
+    background-color: blanchedalmond;
+    margin:auto;
+    margin-bottom: 35px;
+    text-align: center;
+    font-family: 'Rokkitt', serif;
+}

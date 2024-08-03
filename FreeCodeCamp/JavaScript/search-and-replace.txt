@@ -1,0 +1,43 @@
+function myReplace(str, before, after) {
+  let string = str.split(" ");
+  for ( let i=0; i<string.length; i++) {
+    if(before == string[i]){
+      if(checkCapital(before)) {
+       let newWord = replaceUpper(after);
+       console.log(newWord)
+       string[i] = newWord;
+      } else {
+          string[i] = replaceLower(after);
+
+      };
+
+    }
+  }
+  return string.join(" ");
+
+}
+
+
+function checkCapital(mot) {
+  if (mot[0] === mot[0].toUpperCase()){
+    return true;
+  } else {
+  return false;
+  }
+}
+
+function replaceUpper(mot) {
+  let lowerMot = mot
+  let length = mot.length
+  lowerMot = mot[0].toUpperCase() + mot.slice(1,length)
+  return lowerMot;
+}
+
+function replaceLower(mot) {
+  let lowerMot = mot
+  let length = mot.length
+  lowerMot = mot[0].toLowerCase() + mot.slice(1,length)
+  return lowerMot;
+}
+
+console.log(myReplace("His name is Tom", "Tom", "john"));

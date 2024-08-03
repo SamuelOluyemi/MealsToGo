@@ -1,0 +1,35 @@
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    color: aliceblue;
+    background-color:brown;
+    text-align: center;
+    width: 600px;
+    margin-left: 400px;
+}
+#btn1 {
+    padding: 10px;
+    border-radius: 25px;
+    background-color: brown;
+    cursor: pointer;
+}
+
+#btnr {
+    padding: 10px;
+    border-radius: 25px;
+    background-color: brown;
+    cursor: pointer;
+}
+img {
+    width: 450px;
+    height: 700px;
+    display: none;
+}
+
+.wrapper {
+    width: 1000px;
+    height: 750px;
+    margin: 0 auto;
+    margin-left: 400px;
+}
+

@@ -1,0 +1,76 @@
+html {
+    font-size: 1rem;
+    font-family: -apple-system;
+  }
+  body {
+    font-family: system-ui;
+    font-size: 1.3rem;
+    background: orange;
+    color: white;
+    text-align: center;
+  }
+  h1{
+    font-size: 2.5rem;
+  }
+  p {
+    font-family: google sans;
+    background-color: white;
+    color: #000000;
+    position: absolute;
+    text-align: center;
+  }
+  #img-div {
+    display: block;
+    background: white;
+    padding: 1rem;
+    margin: 0;
+  }
+  @media (max-width: 46rem) {
+    #img-div {
+        font-size: 1.4rem;
+      }
+  }
+  
+  img {
+    display: auto;
+    margin: 15px 0 5px 0;
+    max-width: 700px;
+    height: 400px;
+    align-content: center;
+  }
+  @media (max-width: 46rem){
+    img{
+        font-size: 1.4rem;
+      }
+  }
+  
+  figcaption {
+    font-family: google sans;
+    background-color: gray;
+    color: #000000;
+    text-align: center;
+    margin: auto; 
+  }
+  
+  h3{
+    font-family: google sans;
+    background-color: white;
+    color: #000000;
+    text-align: center;
+  }
+  h4{
+    color: #000000;
+    font-family: -apple-system;
+    text-align: center;
+    background-color: gray;
+  }
+  ul{
+    font-family: google sans;
+    color: #000000;
+    text-align: center;
+    margin: 15px 15px 15px 15px;
+  }
+  footer{
+    color: #000000;
+    text-align: center;
+  }

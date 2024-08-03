@@ -1,0 +1,12 @@
+function telephoneCheck(str) {
+//  return  /(1\s)?|^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})/g.test(str);
+ return /^(1\s|1)?(\(\d{3}\)|\d{3})(-|\s)?\d{3}(-|\s)?\d{4}$/.test(str);
+//   if (str.match(validPhoneno)) {
+//     return true;
+// } else {
+//     alert("Invalid Phone number");
+//     false;
+//   }
+}
+
+console.log(telephoneCheck("555-555-5555"));

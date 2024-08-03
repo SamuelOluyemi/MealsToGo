@@ -1,0 +1,41 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(204, 193, 193);
+}
+#calculator {
+    border-radius: 25px;
+    border-style:none;
+    box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.15);
+    margin: auto;
+    margin-top: 50px;
+    width: 350px;
+    height: 420px;
+
+}
+input {
+    width : 120px;
+    height : 25px;
+    font-size: small;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 5px; /*trbl*/
+    background-color: rgb(80, 78, 78);
+    color: rgb(239, 228, 228);
+    align-items: center;
+}
+h1 {
+    color: rgb(21, 21, 20);
+    text-align: center;
+    font-size: 35px;
+    margin: auto;
+    margin-top: 20px;
+}
+p {
+    font-size: 20px;
+}

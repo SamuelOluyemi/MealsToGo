@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lange="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="description" content="SO Contact Form"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" type="text/css" href="contactForm.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <title>SO Contact Form</title>
+    </head>
+    <body>
+        <!--
+         <form id="cf" method="post" action="" >
+            <h1> Please Contact me </h1>
+
+            <fieldset>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" class="stored" required />
+                
+                <label for="gender">Gender</label>
+                <input type="radio" id="male" name="gender" value="male" class="stored" required /> Male
+                <input type="radio" id="male" name="gender" value="female" class="stored" required /> Female
+
+                <label id="number-label" for="number">Age <span class="clue"> (optional)</span> </label>
+                <input type="number" name= "age" id="number" min= "10" max="50" class="stored" placeholder="Age" Required/>
+
+                <label for="mail">Email</label>
+                <input type="text" id="email" name="email" class="stored" required />
+
+                <label for="mail">Address</label>
+                <select id="country" class="stored" name="country">
+                    <option disabled selected value>...select a country...</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Ghana">Ghana</option>
+                    <option value="South Africa">South Africa</option>
+                    <option value="Cameroun">Cameroun</option>
+                </select>
+                <input type="text" id="address" placeholder="Address" class="stored" name="address" required/>
+
+               <label for="mail">Passsword</label>
+                <input type="password" id="password" placeholder="Enter password" class="stored" name="password" required/>
+                <input type="password" id="passwordCheck" placeholder="Confirm password" class="stored" name="passwordCheck" required />
+                
+                <label for="newsletter">Send me monthly newsletter </label>
+                <input type="checkbox" id="newsletter" class="stored" name="newsletter"/>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" class="stored"></textarea>
+            </fieldset>
+
+            <button type="submit">Send</button>
+            <input id="clear" type="reset"/>
+        </form>
+        <script src="contactForm.js"></script>
+-->
+
+
+        <form onsubmit="return false" >
+            <h1> Please Contact me </h1>
+
+            <fieldset>
+                <label for="name">Name</label>
+                Firstname <input type="text" id="firstName" name="firstName" class="stored" />
+                Lastname <input type="text" id="lastName" name="lastName" class="stored" />
+                
+                <label for="gender">Gender</label>
+                <input type="radio" id="male" name="gender" value="male" class="stored" /> Male
+                <input type="radio" id="male" name="gender" value="female" class="stored"> Female
+
+                <label for="mail">Email</label>
+                <input type="text" id="email" name="email" class="stored"/>
+
+                <label for="mail">Address</label>
+                <select id="country" class="stored" name="country">
+                    <option disabled selected value>...select a country...</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Ghana">Ghana</option>
+                    <option value="South Africa">South Africa</option>
+                    <option value="Cameroun">Cameroun</option>
+                </select>
+                <input type="text" id="address" placeholder="Address" class="stored"/>
+
+               <label for="mail">Passsword</label>
+                <input type="password" id="password" placeholder="Enter password" class="stored" />
+                <input type="password" id="passwordCheck" placeholder="Confirm password" class="stored" />
+                
+                <label for="newsletter">Send me monthly newsletter </label>
+                <input type="checkbox" id="newsletter" class="stored" />
+                <label for="message">Message</label>
+                <textarea id="message" name="message" class="stored" ></textarea>
+            </fieldset>
+            <button>Send Contact</button>
+            <input id="clear" type="reset"/>
+            
+ 
+        </form>
+        <script src="contactForm.js"></script>
+    </body>
+
+</html>    
+
+
+<!--
+<div id="buttons">
+                <div id="sendContact" type="button">Send Contact</div> <div id="reset" type="button">Reset</div>
+            </div>
+-->

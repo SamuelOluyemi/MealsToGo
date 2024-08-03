@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="newsfeed.css">
+        <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+        <script type="text/javascript">google.load("feeds", "1")</script>
+        <title> SO RSS News Feed</title>
+    </head>
+
+    <body>
+        <h1>RSS Feeds Demonstration</h1>
+            <div id="feed"></div>
+       <!-- <script type="text/javascript">
+            function load() {
+            var feed = "http://feeds.bbci.co.uk/news/world/rss.xml";
+            new GFdynamicFeedControl(feed, "feedControl");
+        }
+        google.load("feeds", "1");
+        google.setOnLoadCallback(load);
+        </script> --> 
+        
+        <script type="text/javascript">
+            var feedcontainer = document.getElementById("feed")
+var feedurl = "http://www.npr.org/rss/rss.php?id=1006"
+var feedlimit = 10
+var rssoutput = "<h2>Latest NPR Business News: </h2><ul>"
+
+function rssfeedsetup() {
+    var feedpointer = new google.feeds.Feed(feedurl)
+    feedpointer.setNumEntries(feedlimit)
+    feedpointer.load(displayfeed)
+}
+
+function displayfeed(result) {
+    if(!result.error) {
+        var thefeeds = result.feed.entries
+        for (var i = 0; i < thefeeds.length; i++)
+        rssoutput+= "<li><a href=' " + thefeeds[i].link + " '> " + thefeeds[i].title + " </a></li>"
+        rssoutput+= "</ul>"
+        feedcontainer.innerHTML = rssoutput
+    } else { 
+        alert ("Error fetching feeds!")
+    }
+}
+
+window.onload = function() {
+    rssfeedsetup()
+}
+        </script>
+    </body>
+</html>

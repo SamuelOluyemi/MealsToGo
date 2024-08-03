@@ -1,0 +1,17 @@
+function uniteUnique(arr1, arr2, arr3) {
+  let finalArray = [];
+
+  for (let i = 0; i < arguments.length; i++) {
+   let arrArguments = arguments[i];
+
+  for (let j = 0; j < arrArguments.length; j++) {
+    let indexValue = arrArguments[j];
+    if (finalArray.indexOf(indexValue) < 0) {
+        finalArray.push(indexValue);
+      }
+    }
+  }
+  return finalArray;
+}
+
+console.log(uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]));

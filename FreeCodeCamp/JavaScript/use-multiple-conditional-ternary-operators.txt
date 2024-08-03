@@ -1,0 +1,10 @@
+function checkSign(num) {
+let x = 0;
+return (num === x) ? "zero" 
+: (num > x) ? "positive" 
+: "negative";
+}
+
+checkSign(10);
+
+console.log(checkSign(-10))

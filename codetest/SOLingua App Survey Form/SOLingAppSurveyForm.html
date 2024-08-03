@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="description" content="SOLingua App Survey Form"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" type="text/css" href="SOLingAppSurveyForm.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <title> SOLingua App Survey Form </title>
+
+    </head>
+
+    <body>
+      <div class="container">
+        <header class= "header">
+          <h1 id= "title" class= "text-center">SOlingua App Survey Form</h>
+          <p id="description" class="description text-center"> Thanks for helping us improve our app features with responses</p>
+        </header>
+            
+        <form onsubmit="sendEmail(); reset(); return false;" id= "survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+              <input type="text" name="name" id="name" class="form-group" placeholder="Input your name" required />
+          </div>
+              
+          <div class="form-group">
+                <label id="email-label" for="email">E-mail</label>
+                <input type="text" name= "email" id= "email" class= "form-group" placeholder= "Input your e-mail" required/>
+          </div>
+              
+          <div class="form-group">
+            <label id="number-label" for="number">Age <span class="clue"> (optional)</span> </label>
+            <input type="number" name= "age" id="age" min= "10" max="50" placeholder="Age" Required/>
+          </div>
+              
+          <div class="form-group">
+            <p> Which one best describes your role? </p>
+            <select id="role" name="role" class="form-control">
+              <option disabled selected role> Select your role </option>
+              <option value="student">Student</option>
+              <option value="job">Full Time Job</option>
+              <option value="learner">Full Time Learner</option>
+              <option value="prefer-no"> Prefer not to say</option>
+              <option value="other"> Others</option>
+            required </select>
+              </div>
+              
+          <div class="form-group">
+            <p>Would you recommend SOlingua App to someone?</p>
+            <label>
+              <input id="recommend" type="radio" value="Definitely" name="user-recommend" class="imput-radio" checked/> Definitely
+            </label>
+            <label>
+              <input id="recommend" name="user-recommend" value="Maybe" type="radio" class="input-radio"/>Maybe </label>
+            <label>
+              <input id="recommend" name="user-recommend" value="not-sure" type="radio" class="input-radio"/> Not sure </label>
+          </div>
+              
+          <div class="form-group">
+             <p>Which of these SOlingua App features do you prefer the most?</p>
+            <select id="prefer" name="prefer" class="form-control">
+            <option disabled selected preference> Select an option </option>
+            <option value="practice-questions">Practice questions</option>
+            <option value="audio"> Audio listening practices </option>
+            <option value="audio"> Audio conversation practices </option>
+            <option value="visual"> Video calls</option>
+            required  </select>
+          </div>
+              
+          <div class="form-group">
+            <p>What would you like us to improve on?<span class="clue">(check all that apply)</span></p>
+            <label>
+              <input id="improve" type="checkbox" name="video-call" class="input-checkbox" value="video"/>Video call quality</label>
+            <label>
+              <input id="improve" type="checkbox" name="voice-recording" value="audio" class="input-checkbox"/>Improve voice recording </label>
+            <label>
+              <input id="improve" type="checkbox" class="input-checkbox" value="interaction" name="users interaction"/> Users Interaction</label>
+          </div>
+                    
+          <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea id="comment" name="comment" value="comment" rows="5" cols="50" class="input-textarea" placeholder="Add your comments here..."></textarea>
+          </div>
+            <button id="submit-button" class="form-group" type="submit">Submit</button>    
+        </form>
+      </div>
+      <srcipt src="https://smtpjs.com/v3/smtp.js"></srcipt>
+      <script src="SOLingAppSurveyForm.js"></script>
+    </body>
+</html>    
